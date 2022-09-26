@@ -1,9 +1,24 @@
-<h1>Stupid Coaching</h1>
+<div class="card-link">
+  <h1>Stupid Coaching</h1>
+</div>
 
-<p>Your question:</p>
-<%= @question %>
+<br>
 
-<p>Answer:</p>
-<%= @coach_answer %>
 
-<%= link_to "Ask another question", ask_path %>
+<div class="card-question">
+  <div class="card-product-infos">
+    <h2><%= @question %></h2>
+    <p>- You</p>
+  </div>
+</div>
+
+<div class="card-answer">
+  <div class="card-product-infos">
+    <h2><%= @coach_answer %></h2>
+    <p> - Your coach</p>
+  </div>
+</div>
+
+<div class="card-link">
+  <%= link_to "Ask another question", ask_path %>
+</div>
